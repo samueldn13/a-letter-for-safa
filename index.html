@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="theme-color"
+      content="#f8f3ef"
+    />
+    <meta
+      name="description"
+      content="Ada sesuatu yang ingin kusampaikan dengan tulus."
+    />
+    <title>Ada yang ingin kusampaikan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="ambient ambient--one" aria-hidden="true"></div>
+    <div class="ambient ambient--two" aria-hidden="true"></div>
+
+    <section class="envelope-screen" id="envelopeScreen" aria-label="Pembuka surat">
+      <div class="envelope-screen__content">
+        <p class="envelope-screen__eyebrow">SEBUAH PESAN KECIL</p>
+        <h1 class="envelope-screen__title">Dear Safa<span>.</span></h1>
+        <button class="envelope-button" id="openEnvelope" type="button" aria-label="Buka amplop untuk membaca surat">
+          <span class="envelope" aria-hidden="true">
+            <span class="envelope__letter"><span>Untuk Safa</span><span class="envelope__letter-heart">♥</span></span>
+            <span class="envelope__back"></span>
+            <span class="envelope__front"></span>
+            <span class="envelope__flap"></span>
+            <span class="envelope__seal">♥</span>
+          </span>
+          <span class="envelope-button__hint">sentuh untuk membuka</span>
+        </button>
+        <p class="envelope-screen__note">dibuat dengan hati, khusus untukmu</p>
+      </div>
+    </section>
+
+    <main class="page" id="letterPage" inert>
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Dari aku, dengan tulus">
+          <span class="brand__heart" aria-hidden="true">♥</span>
+          <span>sebuah pesan kecil</span>
+        </a>
+        <span class="topbar__note">dibuat dengan hati</span>
+      </header>
+
+      <section class="hero" aria-labelledby="headline">
+        <div class="hero__copy">
+          <p class="eyebrow"><span></span> Proposal Penting</p>
+          <h1 id="headline">Hai, <span class="recipient">Safa</span><span class="title-dot">.</span></h1>
+          <p class="hero__intro">
+            A little confession: I’ve been wanting to tell you something.
+          </p>
+        </div>
+
+        <div class="letter-wrap">
+          <div class="letter-shadow" aria-hidden="true"></div>
+          <article class="letter" id="letter">
+            <div class="letter__top">
+              <span class="letter__label">SURAT KECIL</span>
+              <span class="letter__date" id="date"></span>
+            </div>
+            <div class="letter__flower" aria-hidden="true">
+              <span>✿</span>
+            </div>
+            <p class="letter__greeting">Hai, Safa.</p>
+            <p class="letter__body">
+              Aku mau propose satu hal ke kamu yang mungkin bisa kamu pikirkan baik-baik.
+              Izinin aku untuk jadi pacar kamu, apa kamu bersedia?
+            </p>
+            <p class="letter__question">
+              Let me ask you something...
+              <strong>May I be the one that you need?</strong>
+            </p>
+            <p class="letter__footnote" id="footnote">
+              Apa pun jawabanmu, makasih sudah meluangkan waktu buat baca ini.
+            </p>
+            <div class="letter__seal" aria-hidden="true">♥</div>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>pelan-pelan, yang tulus nggak perlu tergesa</span>
+        <span class="footer__sparkle" aria-hidden="true">✦</span>
+      </footer>
+    </main>
+  </body>
+</html>
